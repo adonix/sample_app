@@ -26,7 +26,9 @@
       <column name="email" sqlType="VARCHAR(255)" length="2000000000" precision="10" nullable="true" jdbcType="12"/>
       <column name="created_at" sqlType="DATETIME" length="2000000000" precision="10" nullable="false" jdbcType="12"/>
       <column name="updated_at" sqlType="DATETIME" length="2000000000" precision="10" nullable="false" jdbcType="12"/>
+      <column name="password_digest" sqlType="VARCHAR(255)" length="2000000000" precision="10" nullable="true" jdbcType="12"/>
       <primary-key columns="id"/>
+      <index name="index_users_on_email" unique="true" columns="email"/>
     </table>
   </data-source>
   <data-source source="LOCAL" name="Rails sample_app: test" product="SQLite" version="3.7.2" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native" uuid="1682210b-8495-4ba4-93c0-33c1ecf98a5e">
