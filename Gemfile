@@ -37,11 +37,14 @@ group :assets do
 end
 
 gem 'jquery-rails', '2.0.2'
+gem 'turbolinks', '1.1.1'
 
 group :test do
   gem 'capybara', '1.1.2'
-  gem 'rb-fsevent', '0.9.1', :require => false
+  #gem 'rb-fsevent', '0.9.1', :require => false
   gem 'growl', '1.0.3'
+  gem 'cucumber-rails', '1.4.0', :require => false
+  gem 'database_cleaner', github: 'bmabey/database_cleaner'
 end
 
 group :production do
